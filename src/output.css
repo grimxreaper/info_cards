@@ -64,6 +64,10 @@ body {
   font-size: 14px;
   justify-content: space-evenly;
 }
+.card:hover {
+  transform: scale(1.07);
+  transition: transform 0.2s;
+}
 p {
   word-spacing: 0px;
   white-space: nowrap;

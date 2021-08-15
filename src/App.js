@@ -38,12 +38,10 @@ class App extends React.Component {
     this.state = {
       displayTable: false,
     };
-    console.log("state: ", this.state);
   }
 
   onCardClick() {
     this.setState({ displayTable: !this.state.displayTable });
-    console.log(this.state.displayTable);
   }
 
   render() {
@@ -67,8 +65,7 @@ class App extends React.Component {
         <div className="table">
           {this.state.displayTable ? (
             <div>
-              {" "}
-              <h2> Property Name Leases </h2> <ItemList />{" "}
+              <h2> Property Name Leases </h2> <ItemList />
             </div>
           ) : null}
         </div>
